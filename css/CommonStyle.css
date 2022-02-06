@@ -3,6 +3,9 @@
 .upColor{
     color: white;
     font-family: Supermercado One, serif;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
 .center {
     text-align: center;

@@ -1,7 +1,3 @@
-.backgroundUP {
-    background-color: white;
-}
-
 .infoCase {
     border: 6px solid blue;
     border-radius: 25px;
@@ -23,6 +19,16 @@
     height: 360px;
     animation: rotation 5s infinite linear;
 }
+.imgBustCase {
+    text-align: center;
+    left: 40%;
+    top: 80%;
+    position: absolute;
+
+}
+.imgBustCase:hover {
+    -webkit-animation: flipper 1s;
+}
 body {
     background: linear-gradient(35deg, lightcyan 15%, cyan 25%, cornflowerblue 65%, dodgerblue 18%);
 }
@@ -39,20 +45,19 @@ body {
 .selection ul li:hover::after {
     width: 100%;
 }
-
 .contactCase {
     bottom: 10%;
     left: 35%;
     right: 40%;
-    top: auto;
+    top: 120%;
     font-size: 150%;
     position: absolute;
     animation: colorChange 5s infinite;
 }
 .contactImgCase {
     position: absolute;
-    left: 45%;
-    bottom: 1%;
+    left: 44%;
+    bottom: -35%;
     display: inline-block;
 }
 @keyframes rotation {
@@ -70,5 +75,20 @@ body {
     }
     to {
         color: blue;
+    }
+}
+
+@keyframes flipper {
+    0% {
+        transform: perspective(350px) rotateX(-90deg);
+    }
+    33% {
+        transform: perspective(350px) rotateX(20deg);
+    }
+    66% {
+        transform: perspective(350px) rotateX(10deg);
+    }
+    100% {
+        transform: perspective(350px) rotateX(0deg);
     }
 }
