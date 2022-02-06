@@ -3,7 +3,7 @@
 }
 
 .infoCase {
-    border: 2px solid lightseagreen;
+    border: 6px solid blue;
     border-radius: 25px;
     box-sizing: content-box;
     padding: 1%;
@@ -61,5 +61,14 @@ body {
     }
     to {
         transform: rotate(359deg);
+    }
+}
+
+@keyframes colorChange {
+    from{
+        color: white;
+    }
+    to {
+        color: blue;
     }
 }
