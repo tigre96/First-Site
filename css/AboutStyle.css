@@ -23,6 +23,38 @@
     height: 360px;
     animation: rotation 5s infinite linear;
 }
+body {
+    background: linear-gradient(35deg, lightcyan 15%, cyan 25%, cornflowerblue 65%, dodgerblue 18%);
+}
+.selection ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: linear-gradient(to right, cyan 50%, white 50%);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.selection ul li:hover::after {
+    width: 100%;
+}
+
+.contactCase {
+    bottom: 10%;
+    left: 35%;
+    right: 40%;
+    top: auto;
+    font-size: 150%;
+    position: absolute;
+    animation: colorChange 5s infinite;
+}
+.contactImgCase {
+    position: absolute;
+    left: 43%;
+    bottom: 1%;
+    display: inline-block;
+}
 @keyframes rotation {
     from{
         transform: rotate(0deg);
