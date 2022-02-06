@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.selection {
+    border-style: hidden;
+    font-size: 130%;
+}

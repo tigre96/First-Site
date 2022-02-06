@@ -1,0 +1,23 @@
+.musicVideo {
+     display: none;
+}
+text {
+    font-size: 400%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    position: absolute;
+    background: rgba(0, 0,0, 0);
+    padding: 20px;
+    color: white;
+}
+
+body {
+    background-color: aqua;
+}
+
+#Mars-BG {
+    max-width: 100%;
+    max-height: 100%;
+}
